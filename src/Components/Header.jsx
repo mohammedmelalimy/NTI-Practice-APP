@@ -14,7 +14,7 @@ const Header = () => {
 
 
   return (
-    <header className="w-5/6 mx-auto bg-white dark:bg-black text-black dark:text-white rounded-lg border-b border-gray-200 dark:border-gray-700">
+    <header className="w-5/6 mx-auto bg-white dark:bg-black text-black dark:text-white rounded-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
 
       <nav className="p-4 flex items-center justify-between">
         
@@ -39,7 +39,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
           {/* Dark Mode */}
           <Link to="/cart">
-            {addToCart.length>0 ? <span className="absolute top-2 right-48 bg-blue-500 text-white rounded-full
+            {addToCart.length>0 ? <span className="absolute top-3 right-17 bg-blue-500 text-white rounded-full
               w-4 h-4 flex items-center justify-center">{addToCart.length}</span>:null}
             <ShoppingCart size={26}/>
           </Link>

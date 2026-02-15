@@ -11,7 +11,7 @@ const Products = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  if (loading) return <p className="text-center mt-8 text-lg">Loading products...</p>;
+  if (loading) return <p className="text-center mt-8 text-lg dark:text-white">Loading products...</p>;
   if (error) return <p className="text-center mt-8 text-red-600">Error: {error}</p>;
 
   return (

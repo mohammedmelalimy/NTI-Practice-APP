@@ -4,9 +4,9 @@ import Products from './Products';
 const Hero = () => {
   return (
     <section className="w-5/6 min-h-screen mx-auto bg-linear-to-r bg-white dark:bg-black 
-    flex flex-col items-center justify-between px-8 py-14 ">
+    flex flex-col items-center justify-between ">
 
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full h-full">
+      <div className="flex flex-col md:flex-row items-center md:items-center justify-between w-full h-svh">
 
         {/* Text + button*/}
         <div className="flex-1 flex flex-col justify-center mb-8 md:mb-0">
@@ -35,10 +35,10 @@ const Hero = () => {
           />
         </div>
       </div>
-
+      <h1 className="text-5xl text-gray-300 font-bold dark:text-white">Popular Products</h1>
       {/* Products */}
       <div className="w-full mt-12">
-        <Products />
+        <Products  className='bg-amber-700'/>
       </div>
 
     </section>
